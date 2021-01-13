@@ -9,7 +9,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: pull-request
-      uses: tiaanduplessis/pull-request
+      uses: tiaanduplessis/pull-request@master
       with:
         destination_branch: "main"
         github_token: ${{ secrets.GITHUB_TOKEN }}
