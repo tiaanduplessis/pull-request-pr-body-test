@@ -13,3 +13,10 @@ jobs:
       with:
         destination_branch: "main"
         github_token: ${{ secrets.GITHUB_TOKEN }}
+        pr_title: "⤴️ ${{ github.actor }} Draft Merge Request"
+        pr_body: |
+          :arrow_heading_up: Closes: #issueid <!-- your issue -->
+
+          **Describe the Change** <!-- A longer description  -->
+          "Put a description here"
+        pr_draft: true
